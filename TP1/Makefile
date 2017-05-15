@@ -5,21 +5,21 @@ INCLUDE= -I /usr/include/GL
 LIB= -lglut -lGLU -lGL -lm
 
 #definition du compilateur a utiliser
-CC=g++
+CC=gcc
 
 #definition des options de compilation a utiliser
 #-g en vue d'autoriser l'utilisation du debugger
 #-Wall affiche le max de messages d'erreurs
-OPTION= -g -Wall -Wextra -std=c++11
+OPTION= -g -Wall -Wextra
 
 tp1:	tp1.o graphique.o 
-	$(CC) -o tp1 tp1.o $(LIB)
+	$(CC) -o tp1 tp1.o graphique.o $(LIB)
 
-tp1.o:	tp1.cpp
-	$(CC) -c tp1.cpp $(INCLUDE) $(OPTION)
+tp1.o:	tp1.c
+	$(CC) -c tp1.c $(INCLUDE) $(OPTION)
 
-graphique.o:	graphique.cpp
-	$(CC) -c graphique.cpp $(INCLUDE) $(OPTION)
+graphique.o:	graphique.c
+	$(CC) -c graphique.c $(INCLUDE) $(OPTION)
 
 clean:
 	rm -r *.o tp1

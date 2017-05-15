@@ -18,4 +18,6 @@ int main (int argc, char *argv[])
   glutDisplayFunc(dessiner);
   /* demarrer la boucle evenementielle */
   glutMainLoop();
+
+  return 0;
 }

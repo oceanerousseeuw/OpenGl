@@ -2,15 +2,7 @@
 #include <GL/glu.h>
 #include <glut.h>
 
-void dessiner(void)
-{
-  /*effacer la fenetre*/
-  glClear(GL_COLOR_BUFFER_BIT);
-  /*affecter la nouvelle couleur*/
-  glClearColor(0.2, 0.5, 0.2, 0.1);
-  /*reinitialisation des instrcutions graphiques*/
-  glFlush();
-}
+#include "graphique.h"
 
 int main (int argc, char *argv[])
 {

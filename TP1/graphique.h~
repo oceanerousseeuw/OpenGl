@@ -1,11 +1,2 @@
-#ifndef GRAPH_HPP
-#define GRAPH_HPP
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include <glut.h>
-
-class graphique{
-  void dessiner();
-}
-
-#endif
+#idndef _GRAPHIQUE_H
+#define _GRAPHIQUE_H
